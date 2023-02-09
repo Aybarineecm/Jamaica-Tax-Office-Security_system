@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="security.css">
+  <link href="https://fonts.google.com/specimen/Poppins?query=Popp" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6b465b3e69.js" crossorigin="anonymous"></script>
+  <title>security</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <div>
+        <img src="images/logocropped.png" alt="Tax Administration Logo">
+      </div>
+      <div class="menu-bar">
+        <ul>
+          <li><a href="security.html"><strong>Visitors</strong></a></li>
+          <li><a href="clock.html"><strong>Employees</strong></a></li>
+          <li><a href="index.html"><i
+                class="fa-solid fa-right-from-bracket fa-flip-horizontal"></i><strong>Logout</strong></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1>
+      Visitors
+    </h1>
+    <div class="visitorsearch">
+      <input id="vsearch" type="search" name="visitorsearch"
+        placeholder="Enter visitor name, id number or ticket number" />
+      <button id="searchv">Search</button>
+    </div>
+
+    <section class="addvisitor">
+      <div class="visitorform">
+        <form action="registervisitor.php" method="post">
+          <h2>Add New Visitor</h2>
+          <label for="id" id="gid"><strong>Government Id</strong></label> <br>
+          <input type="text" name="id" id="id" placeholder="ID Number" required><br>
+          <p class="errormessage1"></p><br>
+          <label for="firstname" id="fname"><strong>First Name</strong></label> <br>
+          <input type="text" name="firstname" id="firstname" placeholder="First Name" required><br>
+          <p class="errormessage2"></p><br>
+          <label for="lastname" id="lname"><strong>Last Name</strong></label><br>
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name" required><br>
+          <p class="errormessage3"></p><br>
+          <label for="purpose" id="pofv"><strong>Purpose Of Visit</strong></label><br>
+          <select name="purpose" id="pofv2" required>
+            <option value="Accounts"><strong>Accounts</strong></option>
+            <option value="Auditing"><strong>Auditing</strong></option>
+            <option value="Human Relations"><strong>Human Relations</strong></option>
+          </select><br>
+          <p class="errormessage4"></p><br>
+          <div class="print">
+            <button type="submit" class="printBtn">Save and Generate Ticket</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="visitortable">
+      <div class="viewvisitors">
+        <form action="" method="post">
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p> <strong>&copy;Tax Administration Jamaica 2022</strong></p>
+  </footer>
+</body>
+
+</html>

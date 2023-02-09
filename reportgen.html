@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="EManage.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="EManageScript.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <img src="images/logocropped.png" alt="TAJ Logo">
+
+      <h2>Report Generation</h2>
+    </header>
+
+      <form action="reportgen.php" method="post" id="repgenform">
+
+          <label>First Name</label>
+          <input type="checkbox" name="sel_fname">
+          <br>
+          <label>Last Name</label>
+          <input type="checkbox" name="sel_lname">
+          <br>
+          <label>Date After</label>
+          <input type="date" name="sel_adate" value="2018-07-22">
+          <br>
+          <label>Date Before</label>
+          <input type="date" name="sel_bname" id="datebefore">
+          <br>
+          <label>Type</label>
+          <select>
+            <option>Visitors / Employees</option>
+            <option>Visitors</option>
+            <option>Employees</option>
+          </select>
+        <br>
+        <input type="submit" value="Generate" id="genbtn" class="savebtn">
+          
+      </form>
+        <table>
+          
+        </table>
+      </main>
+  </body>
+</html>

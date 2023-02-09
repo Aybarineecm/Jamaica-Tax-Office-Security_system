@@ -1,0 +1,62 @@
+.ticket img{
+  float: center;
+  max-width: inherit;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+footer p{
+  clear: both;
+  text-align: center;
+}
+
+.ticket h1{
+  clear:both;
+  font-size: 40px;
+  text-align: center;
+
+}
+.ticket p{
+  clear:both;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: bold;
+}
+body{
+  height: 50%;
+  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ticket #ticketinfo{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.ticket #ticketinfo h3{
+  clear:both;
+  font-size: 15px;
+  text-align: center;
+  display: inline;
+}
+
+@media print {
+  .hidden-print,
+  .hidden-print * {
+      display: none !important;
+  }}
+
+#printBtn{
+  background-color:rgb(77, 3, 77);
+  padding: 10px;
+  border-radius: 5px;
+  border-color: none;
+  border: 1px outset whitesmoke;
+  box-shadow: none;
+  outline: none;
+  width: 80px;
+  color: #fffcfc;
+  float: center;
+  margin-top: 10px;
+  margin-left: 630px;
+}

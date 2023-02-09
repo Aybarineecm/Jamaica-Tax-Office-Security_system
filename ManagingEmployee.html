@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="EManage.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="EManageScript.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <img src="images/logocropped.png" alt="TAJ Logo">
+    </header>
+
+    <main><!-- MAIN IS SETUP AS A VERTICAL FLEXBOX-->
+    <div id="buttons">
+      <input type="button" id="addbtn" value="+Add">
+      <input type="button" id="delbtn" value="-Delete">
+      <input type="button" id="editbtn" value="±Edit">
+    </div>
+
+
+    <table>
+      <th>ID Number</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Floor</th>
+      <th>Role</th>
+      <th>TRN Number</th>
+      <tr>
+        <td>42069</td>
+        <td>John</td>
+        <td>Snow</td>
+        <td>9</td>
+        <td>Boss</td>
+        <td>69420</td>
+      </tr>
+    </table>
+
+
+<!--  ###########ADD FORM###########      -->
+    <form id="addform">
+
+      <div class="splittwo"><!-- Divs apply css classes for display-->
+        <div class="inline-flex">
+      <label>First Name</label>
+      <input type="text" name="fname" placeholder="e.g. Jane">
+        </div>
+        <div class="inline-flex">
+      <label>Last Name</label>
+      <input type="text" name="lname" placeholder="e.g. Doe">
+        </div>
+      </div>
+
+      <div class="splittwo">
+      <div class="inline-flex">
+        <label>Floor</label>
+        <input type="text" name="floorno" placeholder="7,8,9, etc.">
+      </div>
+      <div class="inline-flex">
+        <label>Role</label>
+        <input type="text" name="occupation" placeholder="e.g. Head Auditor">
+      </div>
+      </div>
+
+      <div class="splittwo">
+      <div class="inline-flex">
+        <label>ID Number</label>
+        <input type="text" name="employeeID" placeholder="e.g. 1234567890">
+      </div>
+      <div class="inline-flex">
+        <label>TRN Number</label>
+        <input type="text" name="TRN" placeholder="e.g. 1234567890">
+      </div>
+      </div>
+
+      <input type="submit" name="newuser" value="+Save" class="savebtn">
+    </form>
+
+<!--  ###########DELETE FORM#############      -->
+      <form id="delform">
+        <div class="inline-flex">
+          <label>User ID</label>
+        <input type="text" name="deleteid" placeholder="Delete This User:">
+        </div>
+
+        <br>
+        <input type="submit" name="deluser" value="-Delete" class="savebtn">
+        
+      </form>
+
+<!-- ############EDIT FORM############### -->
+      <form id="editform">
+
+      <div class="splittwo"><!-- Divs apply css classes for display-->
+        <div class="inline-flex">
+      <label>First Name</label>
+      <input type="text" name="fname" placeholder="e.g. Jane">
+        </div>
+        <div class="inline-flex">
+      <label>Last Name</label>
+      <input type="text" name="lname" placeholder="e.g. Doe">
+        </div>
+      </div>
+
+      <div class="splittwo">
+      <div class="inline-flex">
+        <label>Floor</label>
+        <input type="text" name="floorno" placeholder="7,8,9, etc.">
+      </div>
+      <div class="inline-flex">
+        <label>Role</label>
+        <input type="text" name="occupation" placeholder="e.g. Head Auditor">
+      </div>
+      </div>
+
+      <div class="splittwo">
+      <div class="inline-flex">
+        <label>ID Number</label>
+        <input type="text" name="employeeID" placeholder="e.g. 1234567890">
+      </div>
+      <div class="inline-flex">
+        <label>TRN Number</label>
+        <input type="text" name="TRN" placeholder="e.g. 1234567890">
+      </div>
+      </div>
+
+      <input type="submit" name="newuser" value="±Save" class="savebtn">
+    </form>
+    </main>
+    
+  </body>
+</html>
+  

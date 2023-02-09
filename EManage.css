@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+  font-family: Poppins;
+}
+
+body{
+  padding:0;
+  margin:0;
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+}
+
+#buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#buttons input{
+  background-color: purple;
+  padding: 12px;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#buttons input:hover{
+  background-color: #c5c6;
+}
+
+main table{
+  margin-top:2%;
+  border-collapse: collapse;
+}
+
+main table td, main table th{
+  border: 1px solid black;
+}
+
+th{
+  background-color: gray;
+}
+
+#addform, #delform, #editform{
+  margin-top: 3%;
+  display: none;
+}
+
+.inline-flex{
+  display: inline-flex;
+  flex-direction: column;
+  width: 45%;
+  font-size: 24px;
+}
+
+.splittwo{
+  display: flex;
+  width:80%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.savebtn{
+  padding:12px;
+  background-color: purple;
+  color: white;
+  font-size: 16px;
+  border: 2px solid pink;
+  border-radius: 15px;
+  margin-top: 3%;
+}
+
+h2{
+  text-align: center;
+  color: purple;
+}
+
+#repgenform{
+  width:75%;
+  margin:auto;
+}  

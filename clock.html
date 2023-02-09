@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="clock.css">
+  <link href="https://fonts.google.com/specimen/Poppins?query=Popp" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6b465b3e69.js" crossorigin="anonymous"></script>
+  <title>Employee Clock In Clock Out</title>
+</head>
+<body>
+   <header>
+    <div class="menu">
+      <div>
+        <img src="images/logocropped.png" alt="Tax Administration Logo">
+      </div>
+      <div class="menu-bar">
+        <ul>
+          <li><a href="security.html"><strong>Visitors</strong></a></li>
+          <li><a href="clock.html"><strong>Employees</strong></a></li>
+          <li><a href="index.html"><i class="fa-solid fa-right-from-bracket fa-flip-horizontal"></i><strong>Logout</strong></a></li> 
+        </ul>
+      </div> 
+    </div>
+  </header>
+  <main>
+  <h1>
+      Employee Clocking System
+  </h1>
+
+    <section class="employeesearch">
+      <div class="emform">
+        <form action="clockin.php" method="post">
+          <h2>Clock-In</h2>
+          <label for="ac" id="ac"><strong>Access Code</strong></label> <br>
+          <input type="text" name="ac" id="ac" placeholder="Access Code"><br>
+          <p class="errormessage1"></p><br>
+          <label for="firstname" id="fname"><strong>First Name</strong></label> <br>
+          <input type="text" name="firstname" id="firstname" placeholder="First Name"><br>
+          <p class="errormessage2"></p><br>
+          <label for="lastname" id="lname"><strong>Last Name</strong></label><br>
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name"><br>
+          <p class="errormessage3"></p><br>
+          <label for="Department" id="pofv"><strong>Department</strong></label><br>
+          <select name="department" id="pofv2">
+            <option value="Accounts"><strong>Accounts</strong></option>
+            <option value="Auditing"><strong>Auditing</strong></option>
+            <option value="Human Relations"><strong>Human Relations</strong></option>
+          </select><br>
+          <p class="errormessage4"></p><br>
+          <label for="Floor" id="pofv"><strong>Floor Number</strong></label><br>
+          <select name="floor" id="pofv2">
+            <option value="6"><strong>6</strong></option>
+            <option value="8"><strong>8</strong></option>
+            <option value="9"><strong>9</strong></option>
+            <option value="12"><strong>12</strong></option>
+          </select><br>
+          <p class="errormessage4"></p><br>
+          <div class="print">
+            <button type="submit" class="printBtn">Clock In</button>
+          </div>
+        </form>
+
+         <section class="employeesearch2">
+      <div class="emform2">
+        <form action="clockout.php" method="post">
+          <h2>Clock-Out</h2>
+          <label for="ac" id="ac"><strong>Access Code</strong></label> <br>
+          <input type="text" name="ac" id="ac" placeholder="Access Code"><br>
+          <p class="errormessage1"></p><br>
+          <label for="firstname" id="fname"><strong>First Name</strong></label> <br>
+          <input type="text" name="firstname" id="firstname" placeholder="First Name"><br>
+          <p class="errormessage2"></p><br>
+          <label for="lastname" id="lname"><strong>Last Name</strong></label><br>
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name"><br>
+          <p class="errormessage3"></p><br>
+          <label for="Department" id="pofv"><strong>Department</strong></label><br>
+          <select name="department" id="pofv2">
+            <option value="Accounts"><strong>Accounts</strong></option>
+            <option value="Auditing"><strong>Auditing</strong></option>
+            <option value="Human Relations"><strong>Human Relations</strong></option>
+          </select><br>
+          <p class="errormessage4"></p><br>
+          <label for="Floor" id="pofv"><strong>Floor Number</strong></label><br>
+          <select name="floor" id="pofv2">
+            <option value="6"><strong>6</strong></option>
+            <option value="8"><strong>8</strong></option>
+            <option value="9"><strong>9</strong></option>
+            <option value="12"><strong>12</strong></option>
+          </select><br>
+          <p class="errormessage4"></p><br>
+          <div class="print">
+            <button type="submit" class="printBtn">Clock Out</button>
+          </div>
+        </form>
+  </main>
+</body>
+</html>
